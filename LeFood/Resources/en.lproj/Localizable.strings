@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Amby
+
+  Created by syan on 29/03/2024.
+  
+*/
+
+"action.cancel"     = "Cancel";
+"action.delete"     = "Delete";
+"action.close"      = "Close";
+"action.favorite"   = "Add to favorites";
+"action.unfavorite" = "Remove from favorites";
+
+"error.request"     = "The request couldn't finish";
+"error.cancelled"   = "Operation cancelled";
+"error.offline"     = "You seem to be offline, retry when you have access to the internet";
+"error.decoding"    = "Couldn't decode content of type %@: %@";
+
+"contact.copy"      = "Copy email address to pasteboard";
+"contact.title"     = "Choose your messaging app";
+"contact.address"   = "contact@syan.me";
+"contact.subject"   = "About Amby %@ (%@)";
+
+"map.title"         = "Map";
+"map.updated_at"    = "Last update on %@";
+
+"favorites.title"   = "Favorites";

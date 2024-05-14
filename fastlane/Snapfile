@@ -1,0 +1,51 @@
+devices([
+    # iPhone without home button
+    "iPhone 15 Pro Max",                       # 6.7"
+    "iPhone 11 Pro Max",                       # 6.5"
+    "iPhone 15 Pro",                           # 6.1"
+    "iPhone X",                                # 5.8"
+
+    # iPhone with home button
+    "iPhone 8 Plus",                           # 5.5"
+    "iPhone 8",                                # 4.7"
+    "iPhone SE (1st generation)",              # 4"
+
+    # iPad without home button
+    "iPad Pro (12.9-inch) (6th generation)",   # 12.9"
+    "iPad Pro (11-inch) (4th generation)",     # 11"
+
+    # iPad with home button
+    "iPad Pro (12.9-inch) (2nd generation)",   # 12.9"
+    "iPad Pro (10.5-inch)",                    # 10.5"
+    "iPad Pro (9.7-inch)",                     # 9.7"
+])
+
+languages([
+    "en-US",
+    "fr-FR",
+])
+
+ios_version "17.4"
+
+scheme "LeFood"
+
+output_directory "./fastlane/screenshots"
+
+clear_previous_screenshots true
+skip_open_summary true
+clean false
+stop_after_first_error true
+
+reinstall_app false
+app_identifier "me.syan.LeFood"
+
+# in case the status bar override doesn't work, see https://github.com/fastlane/fastlane/issues/21255
+override_status_bar true
+override_status_bar_arguments "--time 2024-05-12T09:41:00.000+02:00 --dataNetwork wifi --wifiMode active --wifiBars 3 --cellularMode active --operatorName '' --cellularBars 4 --batteryState charged --batteryLevel 100"
+
+concurrent_simulators true
+localize_simulator true
+
+headless true
+
+
